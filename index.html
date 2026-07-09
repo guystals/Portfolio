@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Portfolio website showcasing web development projects, skills, and contact information." />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio Guy Stals</title>
+</head>
+
+<body>
+    <header>
+        <h1>Portfolio Guy Stals</h1>
+        <nav aria-label="Primary navigation">
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav-list">
+                <span class="nav-toggle-label">Menu</span>
+                <span class="nav-toggle-icon" aria-hidden="true"></span>
+            </button>
+            <ul id="primary-nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#coursera-certificates">Coursera Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <div class="about-content">
+                <div class="about-copy">
+                    <div class="about-heading">
+                        <h2>About Me</h2>
+                        <img class="about-photo" src="guy-photo.jpg" alt="Portrait of Guy Stals" loading="lazy"
+                            width="72" height="72" />
+                    </div>
+                    <p>I’m a 60-year-old Belgian .NET developer with 15 years of experience, backed by a strong
+                        foundational
+                        career in sales.</p>
+                    <p>My experience lies in Microsoft .NET desktop applications, including C#, ASP.NET Web API,
+                        WPF, and SQL Server.</p>
+                    <p>Driven by a passion for modern technology, I am currently transitioning into full-stack web
+                        development using Blazor.</p>
+                    <p>I leverage cutting-edge AI tools such as GitHub Copilot and Codex to optimize development
+                        workflows, supported by a formal certification in Generative AI for Software Developers.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-filters" aria-label="Project filters">
+                <button type="button" class="project-filter is-active" data-filter="all"
+                    aria-pressed="true">All</button>
+                <button type="button" class="project-filter" data-filter="desktop" aria-pressed="false">Desktop</button>
+                <button type="button" class="project-filter" data-filter="integration"
+                    aria-pressed="false">Integration</button>
+                <button type="button" class="project-filter" data-filter="web" aria-pressed="false">Web</button>
+            </div>
+            <article data-category="desktop integration">
+                <h3>Smulders</h3>
+                <p>Development of software that supports internal processes and planning for steel structures, offshore
+                    wind farms, and industrial projects.</p>
+                <ul>
+                    <li>Development of API functionality for seamless data exchange between the ERP system and DIME
+                        1.0.</li>
+                    <li>Migration of an existing WinForms stock screen in VB to a modern C# WPF application with API
+                        integration.</li>
+                    <li>Development of new WPF screens that generate stock management forecasts, ensuring teams have
+                        the right materials available on time.</li>
+                    <li>For DIME 2.0, development of both the server-side API and the client-side WPF application for
+                        the planning of electrical materials for offshore wind projects.</li>
+                    <li>Setup of robust unit tests with xUnit to improve the quality and reliability of the solution.
+                    </li>
+                </ul>
+                <div class="project-technologies">
+                    <p class="project-technologies-label"><strong>Technologies:</strong></p>
+                    <ul class="technology-list">
+                        <li>.NET 8</li>
+                        <li>C#</li>
+                        <li>WPF</li>
+                        <li>MVVM Community Toolkit</li>
+                        <li>Entity Framework 6</li>
+                        <li>Dependency Injection</li>
+                        <li>Telerik Controls</li>
+                        <li>xUnit</li>
+                        <li>API integrations</li>
+                    </ul>
+                </div>
+            </article>
+            <article data-category="desktop">
+                <h3>Osiris</h3>
+                <p>Osiris manages training in the construction sector and supports appointments,
+                    integrations, and financial administration within a service-oriented Microsoft architecture.</p>
+                <ul>
+                    <li>Active contribution to the continued development and maintenance of a large-scale WPF
+                        application.</li>
+                    <li>Development of WCF services for communication with internal and external systems.</li>
+                    <li>Programming and configuration of reporting within the application.</li>
+                    <li>Support for a complex environment with regional rollout across Belgium.</li>
+                </ul>
+                <div class="project-technologies">
+                    <p class="project-technologies-label"><strong>Technologies:</strong></p>
+                    <ul class="technology-list">
+                        <li>C#</li>
+                        <li>Microsoft SQL Server</li>
+                        <li>SSRS</li>
+                        <li>LLBLGen Pro</li>
+                        <li>WCF</li>
+                        <li>WPF</li>
+                        <li>DevExpress</li>
+                        <li>NUnit</li>
+                        <li>nLog</li>
+                        <li>MQ</li>
+                        <li>BizTalk</li>
+                    </ul>
+                </div>
+            </article>
+            <article data-category="web">
+                <h3>Construbadge</h3>
+                <p>Contribution to an identification and application platform for construction workers, including data
+                    management, history tracking, and self-service for employers.</p>
+                <ul>
+                    <li>Setup of multiple WCF services for managing worker data.</li>
+                    <li>Integration with an external partner for badge creation and follow-up of history and attempts.
+                    </li>
+                    <li>Development of an ASP.NET MVC web application that allowed employers to request and manage
+                        badges.</li>
+                </ul>
+                <div class="project-technologies">
+                    <p class="project-technologies-label"><strong>Technologies:</strong></p>
+                    <ul class="technology-list">
+                        <li>C#</li>
+                        <li>WCF</li>
+                        <li>ASP.NET MVC</li>
+                        <li>jQuery</li>
+                        <li>NHibernate</li>
+                        <li>Microsoft SQL Server 2008 R2</li>
+                        <li>Git</li>
+                        <li>NUnit</li>
+                        <li>Moq</li>
+                        <li>Castle Windsor</li>
+                        <li>Quartz</li>
+                        <li>MSMQ</li>
+                    </ul>
+                </div>
+            </article>
+            <article data-category="desktop">
+                <h3>Fashion Club 70</h3>
+                <p>Contributed to an ERP solution for an exclusive agent and importer, with a focus on additional
+                    functionality and maintenance of the WPF application.</p>
+                <ul>
+                    <li>Development of additional functionalities.</li>
+                    <li>Bug fixing and stabilization of the existing application.</li>
+                </ul>
+                <div class="project-technologies">
+                    <p class="project-technologies-label"><strong>Technologies:</strong></p>
+                    <ul class="technology-list">
+                        <li>C#</li>
+                        <li>WPF</li>
+                        <li>Visual Studio 2008</li>
+                        <li>Firebird</li>
+                        <li>LLBLGen Pro</li>
+                        <li>NUnit</li>
+                        <li>Scrum</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section id="academic-projects">
+            <h2>Academic projects</h2>
+            <article>
+                <h3>BlazorDemoEventEase</h3>
+                <p>A modern event management system built with Blazor WebAssembly and .NET 10.</p>
+                <p><a href="https://github.com/guystals/BlazorDemoEventEase"
+                        target="_blank" rel="noopener noreferrer">View project on GitHub</a></p>
+            </article>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Blazor</li>
+                <li>BizTalk</li>
+                <li>C#</li>
+                <li>Codex</li>
+                <li>Copilot</li>
+                <li>CSS</li>
+                <li>DevExpress</li>
+                <li>Entity Framework</li>
+                <li>Git</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>LLBLGen Pro</li>
+                <li>Moq</li>
+                <li>MVVM Community Toolkit</li>
+                <li>.NET</li>
+                <li>NUnit</li>
+                <li>SSRS</li>
+                <li>SQL Server</li>
+                <li>Telerik</li>
+                <li>Visual Basic</li>
+                <li>Visual Studio</li>
+            </ul>
+        </section>
+        <section id="coursera-certificates">
+            <h2>Coursera Certificates</h2>
+            <ul>
+                <li>AI for Everyone (February 2026)</li>
+                <li>Blazor for Front-End Development (May 2026)</li>
+                <li>Generative AI for Software Developers Specialization (June 2026)</li>
+                <li>Introduction to OpenAI Codex (May 2026)</li>
+                <li>Introduction to Python (March 2026)</li>
+                <li>Python for Data Science, AI &amp; Development (May 2026)</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p class="contact-direct">Email: <a href="mailto:GuyZoektWerk@outlook.com">GuyZoektWerk@outlook.com</a></p>
+            <form id="contact-form" novalidate action="mailto:GuyZoektWerk@outlook.com" method="post"
+                enctype="text/plain">
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required aria-describedby="name-error" />
+                    <p class="field-error" id="name-error" aria-live="polite"></p>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required aria-describedby="email-error" />
+                    <p class="field-error" id="email-error" aria-live="polite"></p>
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+                    <p class="field-error" id="message-error" aria-live="polite"></p>
+                </div>
+                <button type="submit" class="contact-submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
