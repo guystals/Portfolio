@@ -291,7 +291,8 @@ section[id] {
     font-weight: 600;
 }
 
-#skills ul {
+#active-skills ul,
+#inactive-skills ul {
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
@@ -300,7 +301,8 @@ section[id] {
     padding: 0;
 }
 
-#skills li {
+#active-skills li,
+#inactive-skills li {
     padding: 0.75rem 1rem;
     border-left: 4px solid var(--accent);
     border-radius: 12px;
@@ -555,11 +557,13 @@ textarea:focus-visible {
         flex-basis: 100%;
     }
 
-    #skills ul {
+    #active-skills ul,
+    #inactive-skills ul {
         gap: 0.65rem;
     }
 
-    #skills li {
+    #active-skills li,
+    #inactive-skills li {
         width: 100%;
     }
 
