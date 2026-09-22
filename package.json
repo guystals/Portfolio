@@ -4,8 +4,7 @@
   "description": "Personal portfolio website showcasing Guy Stals' background, projects, technical skills, certificates, and contact information.",
   "main": "script.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "playwright test"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +17,6 @@
   },
   "homepage": "https://github.com/guystals/Portfolio#readme",
   "devDependencies": {
-    "@playwright/test": "^1.62.1",
     "@types/node": "^26.2.0"
   }
 }
