@@ -85,7 +85,8 @@ p {
 nav ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.8rem;
+    gap: 0.5rem;
+    row-gap: 0.2rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -218,6 +219,11 @@ section[id] {
     grid-column: 1 / -1;
 }
 
+#projects>p {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
 .project-filters {
     display: flex;
     flex-wrap: wrap;
@@ -292,7 +298,8 @@ section[id] {
 }
 
 #active-skills ul,
-#inactive-skills ul {
+#inactive-skills ul,
+#training-personal-projects ul {
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
@@ -302,7 +309,8 @@ section[id] {
 }
 
 #active-skills li,
-#inactive-skills li {
+#inactive-skills li,
+#training-personal-projects li {
     padding: 0.75rem 1rem;
     border-left: 4px solid var(--accent);
     border-radius: 12px;
@@ -438,7 +446,7 @@ textarea:focus-visible {
     }
 
     nav ul {
-        gap: 0.6rem;
+        gap: 0.4rem;
     }
 
     nav a {
@@ -559,12 +567,14 @@ textarea:focus-visible {
     }
 
     #active-skills ul,
-    #inactive-skills ul {
+    #inactive-skills ul,
+    #training-personal-projects ul {
         gap: 0.65rem;
     }
 
     #active-skills li,
-    #inactive-skills li {
+    #inactive-skills li,
+    #training-personal-projects li {
         width: 100%;
     }
 
