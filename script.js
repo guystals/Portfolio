@@ -72,7 +72,7 @@ if (projectFilters.length > 0 && projectCards.length > 0) {
 }
 
 if (contactForm) {
-    const contactEmailAddress = "GuyZoektWerk@outlook.com";
+    const contactEmailAddress = "guy.stals@outlook.be";
     const fieldRules = {
         name: {
             input: document.querySelector("#name"),
